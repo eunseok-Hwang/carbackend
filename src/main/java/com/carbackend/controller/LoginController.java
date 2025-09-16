@@ -24,7 +24,7 @@ public class LoginController {
         //  1. 유저의 ID/PW 정보를 기반으로 UsernamePasswordAuthenticationToken 생성
         UsernamePasswordAuthenticationToken token =
                 new UsernamePasswordAuthenticationToken(
-                        credentials.getUsername(), credentials.getPassword());
+                        credentials.getUserId(), credentials.getPassword());
         //  2. 생성된 UsernamePasswordAuthenticationToken을 authenticationManager 전달
         //  3. authenticationManager는 궁극적으로 UserDetailsService의 loadUserByUsername을 호출
         //  4. 조회된 유저정보(UserDetail)와 UsernamePasswordAuthenticationToken을 비교해 인증처리
