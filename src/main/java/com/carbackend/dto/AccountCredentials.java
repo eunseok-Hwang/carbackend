@@ -10,6 +10,6 @@ import org.springframework.context.annotation.EnableLoadTimeWeaving;
 @ToString
 @EnableLoadTimeWeaving
 public class AccountCredentials {
-    private String username;
+    private String userId;
     private String password;
 }
